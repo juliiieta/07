@@ -1,65 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=0, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
 </head>
+
 <body>
-     <h1> TABLAS </h1>
-     <h2> preguntas </h2>
-    <h3> 1.¿Cuál es la etiqueta principal utilizada para crear una tabla en HTML?</h3>
-    <p> table </p>
-    <h3> 2.¿Qué etiqueta se utiliza para definir una fila en una tabla?</h3>
-    <p> tr </p>
-    <h3> 3.¿Cuál es la etiqueta utilizada para crear una celda de encabezado en una tabla?</h3>
-    <p> th </p>
-    <h3> 4.¿Cuál es la etiqueta utilizada para crear una celda de datos en una tabla?</h3>
-    <p> td </p>
-    <h3> 5.¿Qué atributo se utiliza para especificar cuántas columnas debe abarcar una celda?</h3>
-    <p> colspan </p>
-    <h3> 6.¿Qué atributo se utiliza para especificar cuántas filas debe abarcar una celda?</h3>
-    <p> rowspan </p>
-    <h3> 7.Si necesitamos crear una tabla con 10 filas ¿qué etiqueta y cuántas veces se debe utilizar para definir las filas?</h3>
-    <p> tr diez veces </p>
-    
-    <table>
-        <tr>
-            <th>Alimento</th>
-            <th>Calorías (100g)</th>
-            <th>Tipo</th>
-            <th>Imagen</th>
-        </tr>
-        <tr>
-            <td>Berenjena</td>
-            <td>25</td>
-            <td>Verdura</td>
-            <td><img src="Assets/berenjena.webp" alt="berenjena" width="40px"></td>
-        </tr>
-        <tr>
-            <td>Limon</td>
-            <td>29</td>
-            <td>Fruta</td>
-            <td><img src="Assets/limon.webp" alt="limon" width="40px"></td>
-        </tr>
-        <tr>
-            <td>Avena</td>
-            <td>68</td>
-            <td>Cereal</td>
-            <td><img  src="Assets/avena.png" alt="avena" width="40px" ></td>
-        </tr>
-        <tr>
-            <td>Cholate</td>
-            <td>546</td>
-            <td>que es</td>
-            <td><img src="Assets/Chocolate.webp" alt="chocolate" width="40px"></td>
-        </tr>
-        <tr>
-            <td>Leche</td>
-            <td>42</td>
-            <td>Lacteo</td>
-            <td><img src="Assets/Leche.png" alt="leche" width="40px" ></td>
-        </tr>
-    </table>
+    <main>
+        <h1> TABLAS </h1>
+        <h2> preguntas </h2>
+        <h3> 1.¿Cuál es la etiqueta principal utilizada para crear una tabla en HTML?</h3>
+        <p> table </p>
+        <h3> 2.¿Qué etiqueta se utiliza para definir una fila en una tabla?</h3>
+        <p> tr </p>
+        <h3> 3.¿Cuál es la etiqueta utilizada para crear una celda de encabezado en una tabla?</h3>
+        <p> th </p>
+        <h3> 4.¿Cuál es la etiqueta utilizada para crear una celda de datos en una tabla?</h3>
+        <p> td </p>
+        <h3> 5.¿Qué atributo se utiliza para especificar cuántas columnas debe abarcar una celda?</h3>
+        <p> colspan </p>
+        <h3> 6.¿Qué atributo se utiliza para especificar cuántas filas debe abarcar una celda?</h3>
+        <p> rowspan </p>
+        <h3> 7.Si necesitamos crear una tabla con 10 filas ¿qué etiqueta y cuántas veces se debe utilizar para definir
+            las filas?</h3>
+        <p> tr diez veces </p>
+
+        <table id="tabla">
+            <tr>
+                <th>Alimento</th>
+                <th>Calorías (100g)</th>
+                <th>Tipo</th>
+                <th>Imagen</th>
+            </tr>
+            <tr>
+                <td>Berenjena</td>
+                <td>25</td>
+                <td>Verdura</td>
+                <td><img src="Assets/berenjena.webp" alt="berenjena" width="40px"></td>
+            </tr>
+            <tr>
+                <td>Limon</td>
+                <td>29</td>
+                <td>Fruta</td>
+                <td><img src="Assets/limon.webp" alt="limon" width="40px"></td>
+            </tr>
+            <tr>
+                <td>Avena</td>
+                <td>68</td>
+                <td>Cereal</td>
+                <td><img src="Assets/avena.png" alt="avena" width="40px"></td>
+            </tr>
+            <tr>
+                <td>Cholate</td>
+                <td>546</td>
+                <td>que es</td>
+                <td><img src="Assets/Chocolate.webp" alt="chocolate" width="40px"></td>
+            </tr>
+            <tr>
+                <td>Leche</td>
+                <td>42</td>
+                <td>Lacteo</td>
+                <td><img src="Assets/Leche.png" alt="leche" width="40px"></td>
+            </tr>
+        </table>
+
+        <table id="resultados">
+            <tr class="nav">
+                <th>pos.</th>
+                <th>NUMERO</th>
+                <th>PILOTO</th>
+                <th>MARCA</th>
+                <th>VUELTAS</th>
+                <th>TIEMPO</th>
+                <th>DIFERENCIA</th>
+            </tr>
+            <tr>
+                <td class="puestos">1º</td>
+                <td>56</td>
+                <td class="nombres">Todino, Germán</td>
+                <td><img src="Assets/Dodge.png" alt="dodge"></td>
+                <td>25</td>
+                <td>40:14.276</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="puestos">2º</td>
+                <td>68</td>
+                <td class="nombres">Santero, Julián</td>
+                <td><img src="Assets/ford.png" alt="ford"></td>
+                <td>25</td>
+                <td>40:15.295</td>
+                <td>1.019</td>
+            </tr>
+            <tr>
+                <td class="puestos">3º</td>
+                <td>6</td>
+                <td class="nombres">Pernía, Leonel</td>
+                <td><img src="Assets/chevrolet.png" alt="chevrolet"></td>
+                <td>25</td>
+                <td>40:17.449</td>
+                <td>3.173</td>
+            </tr>
+            <tr>
+                <td class="puestos">4º</td>
+                <td>95</td>
+                <td class="nombres">Landa, Marcos</td>
+                <td><img src="Assets/torino.png" alt="torino"></td>
+                <td>25</td>
+                <td>40:18.269</td>
+                <td>3.993</td>
+            </tr>
+            <tr>
+                <td class="puestos">5º</td>
+                <td>83 </td>
+                <td class="nombres"> Ardusso, Facundo</td>
+                <td><img src="Assets/chevrolet.png" alt="chevrolet"></td>
+                <td>25</td>
+                <td>40:20.723</td>
+                <td>6.447</td>
+            </tr>
+            <tr>
+                <td class="puestos">6º</td>
+                <td>133 </td>
+                <td class="nombres">Aguirre, Valentín</td>
+                <td><img src="Assets/Dodge.png" alt="dodge"></td>
+                <td>25</td>
+                <td>40:22.686</td>
+                <td>8.410</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div class="pie">
+            <div><img src="Assets/logonegro.png" alt=""></div>
+            <div>competencias</div>
+            <div>contacto</div>
+        </div>
+        <div>© 2001-2023 JML | All Rights Reserved |</div>
+    </footer>
 </body>
+
 </html>

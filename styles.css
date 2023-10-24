@@ -1,0 +1,46 @@
+#tabla{
+    background-color: rgb(208, 182, 151);
+    color: white;
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    font-size: 1.4em;
+    border: 1px solid;
+}
+/* segunda tabla */
+#resultados{
+    background-color: #ffffff;
+    color: #878787;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 90%;
+    font-size: 25px;
+    font-weight: lighter;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.nombres{
+    color: #444444;
+    font-family: 'Staatliches', sans-serif;
+}
+.nav{
+    background-color: #444444;
+}
+td{
+    border-bottom: 1px solid #eeeeee;
+}
+.puestos{
+    color: black;
+    background-image: url(Assets/numero.png);
+}
+footer{
+    background-color: #eeeeee;
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
