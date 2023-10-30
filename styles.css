@@ -1,3 +1,8 @@
+* { /* todos los elementos no tendrán margin y padding */
+    margin: 0;
+    padding: 0;
+}
+
 #tabla{
     background-color: rgb(208, 182, 151);
     color: white;
@@ -20,7 +25,8 @@
     font-size: 25px;
     font-weight: lighter;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .nombres{
     color: #444444;
@@ -41,6 +47,35 @@ footer{
 }
 .pie{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: left;
+}
+header{
+    display: flex;
+    background-color: #444444;
+    align-items: center;
+    height: 150px;
+}
+#lista-header{
+    display: flex;
+    justify-content: space-around;
+    width:600px ;
+    color: #ff0004;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 150%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 200%;
+    color: #ff0004;
+}
+ul{
+    list-style: none;
+}
+#destacado{
+    color: #ff0004;
 }
